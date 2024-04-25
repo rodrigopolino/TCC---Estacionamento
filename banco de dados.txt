@@ -1,0 +1,110 @@
+#drop database tcc;
+create database tcc;
+use tcc;
+CREATE TABLE tcc.usuario (
+  usuario_id INT NOT NULL AUTO_INCREMENT,
+  usuario VARCHAR(200) NOT NULL,
+  senha VARCHAR(32) NOT NULL,
+  PRIMARY KEY (usuario_id));
+  
+INSERT INTO usuario(usuario,senha) VALUES ('rodrigo', md5('1234'));
+  
+#drop table tbFuncionarios;
+create table tbFuncionarios (
+	idfunc int primary key auto_increment,
+	nome varchar(255),
+    cpf varchar(14),
+    telefone varchar(15),
+    usuario varchar(20),
+    senha varchar(6)
+);
+
+#drop table tcc.func;
+CREATE TABLE tcc.func (
+  func_id INT NOT NULL AUTO_INCREMENT,
+  usuario VARCHAR(200) NOT NULL,
+  senha VARCHAR(32) NOT NULL,
+  PRIMARY KEY (func_id),
+  foreign key(usuario) references tbFuncionarios(usuario),
+  foreign key(senha) references tbFuncionarios(senha)
+);
+
+#drop table tbEstacionar;
+create table tbEstacionar(
+	id int primary key auto_increment,
+    placa varchar(10),
+    marca varchar(20),
+    modelo varchar(20),
+    dono varchar(60),
+	data date,
+    hora time,
+    situacao varchar(20),
+    tipo varchar(20)
+);
+#drop table tbEstacionarS;
+create table tbEstacionarS(
+	id int primary key auto_increment,
+    placa varchar(8),
+    marca varchar(20),
+    modelo varchar(20),
+    dono varchar(60),
+	data date,
+    hora time,
+    situacao varchar(20),
+    tipo varchar(20)
+);
+#drop table tbFinalizar;
+create table tbFinalizar(
+	id int primary key auto_increment,
+	placa varchar(8),
+    marca varchar(20),
+    modelo varchar(20),
+    dono varchar(60),
+    dataent date,
+    datasai date,
+	horaent time,
+    horasai time,
+    tempo varchar(10),
+    valor varchar(10),
+    pgmt varchar(20),
+    relatos varchar(100),
+    idEstacionar int,
+    foreign key(idEstacionar) references tbEstacionar(id) 
+);
+
+#insert into tbFinalizar values (null, 'rod-1234', 'Chevrolet', 'Onix', 'José', '2022-11-22', '2022-11-22', '21:34:04', '23:34:04', '2:00:00', '15', 'debito', 'ok', '2');
+#insert into tbFinalizar values (null, 'rod-1234', 'Chevrolet', 'Onix', 'José', '2022-11-21', '2022-11-21', '21:34:04', '23:34:04', '2:00:00', '15', 'debito', 'ok', '2');
+#insert into tbFinalizar values (null, 'rod-1234', 'Chevrolet', 'Onix', 'José', '2022-11-20', '2022-11-20', '21:34:04', '23:34:04', '2:00:00', '15', 'debito', 'ok', '2');
+
+SELECT sum(valor) from tbFinalizar where datasai='2022-11-23';
+SELECT sum(valor) from tbFinalizar where datasai='2022-11-22';
+
+#drop table tbMensalistas;
+create table tbMensalistas(
+ idmensalista int primary key auto_increment,
+ dono varchar(100),
+ cpf varchar(12),
+ telefone varchar(15),
+ sexo varchar(30),
+ placa varchar(8),
+ marca varchar(20),
+ modelo varchar(20),
+ estadoCarro varchar(255),
+ cep int(9),
+ rua varchar(225),
+ bairro varchar(225),
+ cidade varchar(225),
+ estado varchar(2),
+ numero varchar(8),
+ datarenovacao date,
+ mensalidade varchar(5)
+);
+
+select * from tbEstacionar;
+select * from tbEstacionarS;
+select * from tbFinalizar;
+select * from tbMensalistas;
+select * from tbFuncionarios;
+select count(*) from tbEstacionar where placa='TEG-3435' and tipo='avulso' and situacao='Pago';
+select * from tbFuncionarios order by idfunc desc;
+select * from tcc.func;
