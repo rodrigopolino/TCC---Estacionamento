@@ -1,0 +1,109 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#header {
+    background-color:cornflowerblue;
+    height: 65px;
+    width: 100%;
+    margin-top: -25px;
+
+}
+#header p {
+    width: 17%;
+    height: 65px;
+    font-family: fantasy;
+    font-size: 25px;
+    padding-top: 18px;
+}
+#geral {
+	background-color: #CEE3F6;
+	height: 110px;
+}
+#geral h1 {
+    margin-top: 5.5px;
+}
+#contmenu {
+    background-color: #02012D;
+    height: 800px;
+    width: 17%;
+	float: left;
+}
+#menu {
+    margin-left: -43.5px;
+	float: right;
+}
+#menu ul {
+    margin-left: 0px;
+	list-style: none;
+}
+#menu ul li {
+	display:block;
+	padding: 0px;
+    color: wheat;
+}
+#menu ul li button {
+	height: 40px;
+	width: 220px;
+	margin-top: 0px;
+	background-color: #0080FF;
+	border: none;
+	border-radius: 2px;
+    font-size: 19px;
+    color: white;
+}
+#menu ul li button:hover {
+	background-color:#A9E2F3;
+}
+#menu ul li a {
+	padding:  4px;
+	display: inline-block;
+	text-decoration: none;
+}
+a button {
+    height: 30px;
+	width: 100px;
+    border-radius: 3px;
+    font-size: 19px;
+    margin-left: 600px;
+}
+input {
+	margin-left: 200px;
+	width: 200px;
+	height: 40px;
+	border: 1px solid;
+	border-radius: 7px;
+	margin-top: 3px;
+	font-size: 17px;
+}
+
+.salvar input {
+	width: 100px;
+	margin-top: 20px;
+	margin-left: 250px;
+	text-align: center;
+	background-color: lightgreen;
+}
+.table {
+	width: 40%;
+	text-align: center;
+	float: right;
+	margin-top: 10px;
+	margin-right: 200px;
+	border: 1px solid;
+	border-radius: 3px;
+}
+#tbproduto {
+	margin-top: -210px;
+}
+#tbcategoria {
+	margin-top: -115px;
+}
+th {
+	background-color: aquamarine;
+	border-radius: 3px;
+}
+th, td {
+	padding: 15px;
+}
