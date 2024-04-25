@@ -1,0 +1,193 @@
+/**, *:before, *:after{
+  padding: 0;
+  margin: 0;
+  font-family: Candara;
+}
+body{
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+}
+h3{
+  font-size: 38px;
+    color: rgb(61, 157, 179);
+  padding: 2px 0 10px 0;
+    font-family: Candara;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 19px;
+    padding-top: 11px;
+}
+h3:after{
+  content: ' ';
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin-top: 10px;
+  background: -webkit-linear-gradient(left, rgb(61, 157, 179) 0%,rgb(61, 157, 179) 20%,rgb(61, 157, 179) 53%,rgba(147,184,189,0.8) 79%,rgb(61, 157, 179) 100%); 
+  background: linear-gradient(left, rgb(61, 157, 179) 0%,rgb(61, 157, 179) 20%,rgb(61, 157, 179) 53%,rgb(61, 157, 179) 79%,rgb(61, 157, 179) 100%); 
+}
+input {
+  outline: none;
+}
+input:not([type="checkbox"]){
+  width: 60%;
+  margin-top:4%;
+  padding: 3%;    
+  border: 1px solid rgb(61, 157, 179);
+  font-size: 15px;
+  font-weight: 500;
+ 
+  -webkit-border-radius: 3px;
+  border-radius: 20px;
+ 
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+  box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+ 
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+input[type="submit"]{
+  width: 40%!important;
+  cursor: pointer;  
+  background: #fff;
+  padding: 2% 1%;
+  color: #000;
+  font-size: 15px;  
+  border: 1px solid #fff;   
+  margin-bottom: 10%;  
+  text-shadow: 0 1px 1px #333;
+ 
+  -webkit-border-radius: 2px;
+  border-radius: 10px;
+  border: 1px solid rgb(61, 157, 179);
+ 
+  transition: all 0.3s linear;
+}
+input[type="submit"]:hover{
+  background: rgb(61, 157, 179);
+  color: white;
+}
+.box{
+  position: relative;
+  width: 35%;
+  padding-top: 1%;
+  height: 50%;   
+  margin: 0 0 35px 0;
+  background: #f7f7f7;
+  border: 1px solid rgba(147, 184, 189,0.8);
+   
+  -webkit-box-shadow: 5px;
+  border-radius: 25px;
+   
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+ 
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+}
+*/
+
+
+
+
+
+
+/*?.hero{
+    height: 100%;
+    width: 100%;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.788), rgba(0, 0, 0, 0.747)), url(logomp.png);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+.form-box{
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 6% auto;
+    background: rgb(230, 230, 230);
+    padding: 5px;
+    overflow: hidden;
+}
+.button-box{
+    width: 240px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px rgba(61, 157, 179, 0.137);
+    border-radius: 30px;
+}
+.toggle-btn{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 130px;
+    height: 100%;
+    background: linear-gradient(to right, rgb(61, 157, 179), rgb(31, 90, 104));
+    border-radius: 30px;
+    transition: .5s;
+}
+.social-icons{
+    margin: 30px auto;
+    text-align: center;
+}
+.social-icons img{
+    width: 30px;
+    margin: 0 12px;
+    box-shadow: 0 0 20px 0 #7f7f7f;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.input-group{
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+.input-field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    background: linear-gradient(to right, rgb(61, 157, 179), rgb(31, 90, 104));
+}
+.chech-box{
+    margin: 30px 10px 30px 0;
+}
+span{
+  color: #777;
+  font-size: 12px;
+  bottom: 64px;
+  position: absolute;  
+}
+#avulsos{
+    left: 50px;
+}
+#mensalista{
+    left: 450px;
+}/*
